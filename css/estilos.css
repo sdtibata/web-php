@@ -1,0 +1,33 @@
+:root { --cafe: #6b4226; --crema: #f6efe6; }
+body { background: var(--crema); color: #2b1d14; }
+section { padding: 4rem 0; }
+
+/* hover 1, 2 y 3 */
+.navbar a:hover { color: var(--cafe) !important; text-decoration: underline; }
+.btn-cafe { background: var(--cafe); color: #fff; transition: transform .2s, background .2s; }
+.btn-cafe:hover { background: #4e2f1a; color: #fff; transform: translateY(-2px); }
+.tarjeta { transition: transform .3s, box-shadow .3s; }
+.tarjeta:hover { transform: scale(1.03); box-shadow: 0 10px 25px rgba(0, 0, 0, .15); }
+.galeria img { transition: filter .3s; }
+.galeria img:hover { filter: sepia(.6); }
+
+/* animaciones */
+@keyframes aparecer { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: none; } }
+@keyframes latido { 50% { transform: scale(1.1); } }
+.hero h1 { animation: aparecer 1s ease-out; }
+.latido { animation: latido 1.5s infinite; }
+
+/* WhatsApp flotante */
+.whatsapp {
+  position: fixed; right: 20px; bottom: 20px; z-index: 1000;
+  width: 60px; height: 60px; border-radius: 50%;
+  background: #25d366; color: #fff; display: grid; place-items: center;
+  font-weight: 700; text-decoration: none; animation: latido 2s infinite;
+}
+
+.carousel-item img { height: 420px; object-fit: cover; }
+
+@media (max-width: 768px) {
+  section { padding: 2.5rem 0; }
+  .carousel-item img { height: 240px; }
+}

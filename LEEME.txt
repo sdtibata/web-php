@@ -1,0 +1,17 @@
+CAFÉ AURORA · proyecto de prueba Web 26-2 (grupo 12 · DIAZ TIBATA DANIEL (PRUEBA))
+
+FASE 1 (Drive)
+  Sube este .zip y una imagen del diseño a la carpeta de Drive del grupo y envía la Fase 1.
+
+FASE 2 (Hostinger)
+  1. hPanel → Bases de datos → MySQL: crea una base y un usuario.
+  2. phpMyAdmin → selecciona esa base → Importar → db/cafe_aurora.sql
+  3. Edita config/conexion.php con el nombre de la base, el usuario y la contraseña.
+  4. Administrador de archivos → public_html: sube TODO el contenido de esta carpeta
+     (index.php y verificacion.php deben quedar directamente en public_html).
+  5. Abre https://tu-dominio/verificacion.php: debe mostrar una cadena de 32 letras y números.
+  6. Envía la Fase 2 con la URL de tu dominio.
+
+FASE 3 (GitHub)
+  Cada integrante crea un repo público y en "Add file → Upload files" arrastra todo el contenido
+  de esta carpeta (incluido verificacion.php). Luego envía la Fase 3 con los repos.
